@@ -8,7 +8,7 @@ img {
 }
 
 h2 {
-  font-weight: bold;
+  background-color: rgb(250, 237, 237);
 }
 
 .container {
@@ -68,7 +68,7 @@ form {
   border-radius: 15px;
 }
 
-.totalprice {
+.totalPrice {
   background-color: rgb(250, 237, 237);
   padding: 20px;
   border-radius: 15px;
