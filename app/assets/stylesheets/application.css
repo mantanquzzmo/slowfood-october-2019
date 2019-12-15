@@ -1,25 +1,17 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+  background-image: url(https://image.freepik.com/free-vector/hand-drawn-vegetables-fruit-pattern_23-2148241420.jpg);
+  font-family: Garamond,Perpetua,'Times New Roman',serif;
+}
 
 img {
   margin-top: 5em;
 }
 
 .container {
-  margin-left: 1%;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  max-width: 100%;
 }
 
 a {
@@ -29,5 +21,26 @@ a {
 
 #green {
   color: rgb(5, 197, 5);
+  font-size: 60px;
 }
 
+#topPicks {
+  background-color: rgba(232, 228, 228, 0.954);
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card {
+  margin-left: 10px;
+  width: 30%;
+  display: inline-table;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; 
+}
+
+.innerCard {
+  background-color: rgba(232, 228, 228, 0.954);
+}
