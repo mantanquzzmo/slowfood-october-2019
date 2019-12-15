@@ -14,18 +14,13 @@ img {
   max-width: 100%;
 }
 
-a {
-  color: white;
-  font-size: large;
-}
-
 #green {
   color: rgb(5, 197, 5);
   font-size: 60px;
 }
 
 #topPicks {
-  background-color: rgba(232, 228, 228, 0.954);
+  background-color: rgba(232, 228, 228);
   width: 100%;
   margin-bottom: 20px;
 }
@@ -42,5 +37,11 @@ a {
 }
 
 .innerCard {
+  padding: 5px;
   background-color: rgba(232, 228, 228, 0.954);
+}
+
+.notice {
+  font-size: 20px;
+  background-color: darkgray;
 }

@@ -10,7 +10,9 @@
             <ul>
               <li><%= product.description %></li>
               <li><%= product.price %> SEK</li>
+              <% if user_signed_in? %>
               <%= button_to 'Add to order', order_items_path(id: product.id) %>
+              <% end %>
             </ul>
           </li>
         </ul>
