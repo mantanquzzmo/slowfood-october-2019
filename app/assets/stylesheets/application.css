@@ -11,6 +11,10 @@ h2 {
   background-color: rgb(250, 237, 237);
 }
 
+#owner {
+  background-color: rgba(232, 228, 228, 1);
+}
+
 .container {
   text-align: center;
   padding-left: 5%;
