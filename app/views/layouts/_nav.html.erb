@@ -4,10 +4,9 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-link"><%= link_to 'Menu', root_path, class: 'navbar-brand' %><li>
           <li class="nav-link">
-          <% if user_signed_in? %>
-            <% else %>
-              <%= link_to 'Login', new_user_session_path, class: 'navbar-brand' %><li>
-            <% end %>
+          <% unless user_signed_in? %>
+            <%= link_to 'Login', new_user_session_path, class: 'navbar-brand' %><li>
+          <% end %>
           <li class="nav-link">
             <% if user_signed_in? %>
               <% unless current_user.orders.empty? %>
