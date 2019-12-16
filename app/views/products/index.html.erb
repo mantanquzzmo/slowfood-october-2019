@@ -1,19 +1,25 @@
 <% if owner_signed_in? %>
-  <h3>Welcome <%= current_owner.email %>!</h3>
+  <h3 id="owner">Welcome <%= current_owner.email %>!</h3>
 <% end %>
 
-<h1>Greta's Top Picks</h1>
+<div id="topPicks">
+  <h1>Greta's Top Picks</h1>
+</div>
 <% @categories.each do |category| %>
-  <h3><%= category.name %></h3>
-  <% category.products.each do |product| %>
-    <ul>
-      <li id=<%= dom_id(product) %>><%= product.name %>
+    <div class="card">
+      <h3><%= category.name %></h3>
+      <% category.products.each do |product| %>
         <ul>
-          <li><%= product.description %></li>
-          <li><%= product.price %> SEK</li>
-          <%= button_to 'Add to order', order_items_path(id: product.id) %>
+          <li class="innerCard" id=<%= dom_id(product) %>><%= product.name %>
+            <ul>
+              <li><%= product.description %></li>
+              <li><%= product.price %> SEK</li>
+              <% if user_signed_in? %>
+                <%= button_to 'Add to order', order_items_path(id: product.id) %>
+              <% end %>
+            </ul>
+          </li>
         </ul>
-      </li>
-    </ul>
-  <% end %>
+      <% end %>
+    </div>
 <% end %>
