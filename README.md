@@ -1,7 +1,7 @@
 # SlowFood Application
 
 
-SlowFood is a web applitcation that users can use to create accounts and navigate through a simulated food delivery service. They may add items to cart to create an order and review their order. The owner of the store may also sign up with future functionality to modify menus.
+SlowFood is a web application that users can use to create accounts and navigate through a simulated food delivery service experience. They may add items to carts to create an order and review their order. The owner of the store may also sign up with future functionality to modify the menu.
 
 ## Deployed Site
 Deployed with continuous deployment through heroku at:
@@ -67,7 +67,7 @@ I would like be able to see a list on an order details page
 ## Setup
 #### Clone repository
 ```
-$ git clone https://github.com/EevanR/slowfood-october-2019.git
+$ git clone https://github.com/mantanquzzmo/slowfood-october-2019.git
 $ cd slowfood-october-2019
 ```
 
